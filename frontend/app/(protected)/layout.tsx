@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { isAuthenticated, logout } from "@/lib/auth";
+import FloatingChat from "@/components/chat/FloatingChat";
 
 export default function ProtectedLayout({
   children,
@@ -45,6 +46,7 @@ export default function ProtectedLayout({
         </button>
       </header>
       <main style={styles.main}>{children}</main>
+      <FloatingChat />
       <footer style={styles.footer}>
         <p style={styles.footerText}>Built with focus.</p>
       </footer>

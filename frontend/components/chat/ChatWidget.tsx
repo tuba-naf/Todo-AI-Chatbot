@@ -185,7 +185,7 @@ const styles: Record<string, React.CSSProperties> = {
   container: {
     display: "flex",
     flexDirection: "column",
-    height: "calc(100vh - 200px)",
+    height: "100%",
     minHeight: 400,
     border: "1px solid #e0e0e0",
     borderRadius: 8,

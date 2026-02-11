@@ -12,6 +12,8 @@ engine = create_engine(db_url, echo=False)
 
 
 def create_db_and_tables():
+    # Import all models so SQLModel registers their tables
+    import app.models  # noqa: F401
     SQLModel.metadata.create_all(engine)
 
 
